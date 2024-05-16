@@ -1,0 +1,285 @@
+
+.nav_container {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(79, 242, 255, 1) 73%,
+    rgba(70, 224, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // flex-direction: column;  
+  padding: 10px;
+  .nav_ul_hidden{
+    display: none;
+  }
+  .nav_ul_hidden.active{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    row-gap: 10px;
+    li{
+      border: 1px solid grey;
+      padding: 5px 10px;
+      border-radius: 10px;
+      width: 110px;
+      a{
+        text-decoration: none;
+        color: black;
+      }
+    }
+    
+  }
+  .nav_ul {
+    #qeydiyyat_giris{
+      display: flex;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0;
+    .giris_qeydiyyat {
+      display: flex;
+      gap: 30px;
+    }
+
+    li {
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: clamp(0.9375rem, 0.675rem + 0.6vw, 1.125rem);
+        font-weight: 400;
+        #giris {
+          display: flex;
+          font-size: 15px;
+          padding: 2px 10px;
+          border: 0px;
+          background: rgb(255, 255, 255);
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(134, 243, 255, 1) 0%,
+            rgba(70, 229, 255, 1) 100%
+          );
+          border-radius: 4px;
+          font-size: clamp(0.9375rem, 0.675rem + 0.6vw, 1.125rem);
+          font-weight: 400;
+        }
+        #giris:hover {
+          background: rgb(255, 255, 255);
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(127, 237, 255, 1) 0%,
+            rgba(0, 230, 255, 1) 32%,
+            rgba(0, 202, 255, 1) 100%
+          );
+        }
+        #qeydiyyat {
+          display: flex;
+          font-size: 15px;
+          padding: 2px 10px;
+          border: 0px;
+          background: rgb(255, 255, 255);
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(134, 243, 255, 1) 0%,
+            rgba(70, 229, 255, 1) 100%
+          );
+          border-radius: 4px;
+          font-size: clamp(0.9375rem, 0.675rem + 0.6vw, 1.125rem);
+          font-weight: 400;
+        }
+        #qeydiyyat:hover {
+          background: rgb(255, 255, 255);
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 0%,
+            rgba(127, 237, 255, 1) 0%,
+            rgba(0, 230, 255, 1) 32%,
+            rgba(0, 202, 255, 1) 100%
+          );
+        }
+      }
+    }
+    .nav_logo_name {
+      a {
+        img {
+          max-width: 190px;
+          padding-top: 10px;
+        }
+      }
+    }
+    #drop_down_btn {
+      border-radius: 7px;
+      display: none;
+      i {
+        padding: 7px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+#darkMode_btn{
+  border-radius: 3px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(138, 248, 255, 1) 0%,
+      rgba(79, 242, 255, 1) 77%,
+      rgba(70, 224, 255, 1) 100%
+    );
+    padding: 2px 5px;
+    margin-left: 20px;
+}
+.dark_mode{
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(24,200,255,1) 0%, rgba(0,105,201,1) 100%);
+  // color: white
+}
+@media only screen and (max-width: 800px) {
+  .nav_container {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(245, 254, 255, 1) 42%,
+      rgba(70, 229, 255, 1) 100%
+    );
+    .nav_ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      .giris_qeydiyyat{
+        display: none;
+      }
+      li {
+        display: none;
+      }
+      .nav_logo_name {
+        display: flex;
+      }
+      #drop_down_btn {
+        border-radius: 7px;
+        display: flex;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(138, 248, 255, 1) 0%,
+          rgba(79, 242, 255, 1) 77%,
+          rgba(70, 224, 255, 1) 100%
+        );
+        i {
+          padding: 7px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav_container {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(245, 254, 255, 1) 42%,
+      rgba(70, 229, 255, 1) 100%
+    );
+    .nav_ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+      width: 90%;
+      li {
+        display: none;
+      }
+      .nav_logo_name {
+        display: flex;
+        a {
+          img {
+            width: 150px;
+          }
+        }
+      }
+      #drop_down_btn {
+        border-radius: 7px;
+        display: flex;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(138, 248, 255, 1) 0%,
+          rgba(79, 242, 255, 1) 77%,
+          rgba(70, 224, 255, 1) 100%
+        );
+        i {
+          padding: 7px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nav_container {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(245, 254, 255, 1) 52%,
+      rgba(70, 229, 255, 1) 100%
+    );
+    .nav_ul {
+      li {
+        display: none;
+      }
+      .nav_logo_name {
+        display: flex;
+        a {
+          img {
+            width: 150px;
+          }
+        }
+      }
+      #drop_down_btn {
+        border-radius: 7px;
+        display: flex;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(138, 248, 255, 1) 0%,
+          rgba(79, 242, 255, 1) 77%,
+          rgba(70, 224, 255, 1) 100%
+        );
+        i {
+          padding: 7px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+html{
+  scrollbar-color:rgba(70, 224, 255, 1) rgb(207, 252, 255) ;
+}
